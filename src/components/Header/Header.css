@@ -1,0 +1,49 @@
+.headerMenuItems {
+  position: absolute;
+  margin-top: 20px;
+  left: 0;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  box-shadow: 0 0 44px rgba(0, 0, 0, 0.03);
+}
+.headerMenuItems > a {
+  color: #222;
+  display: block;
+  font-weight: 700;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.headerDropdownBtn {
+  padding: 12px 20px;
+  background-color: var(--btn-transparent);
+  color: var(--white);
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.headerButton {
+  transform: scale3d(1none, 1none, 1none);
+  color: var(--white);
+  transform-style: preserve-3d;
+  background-color: var(--btn-transparent);
+  border-style: none;
+  border: 1px rgba(255, 255, 255, 0.21);
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: all 0.2s;
+}
