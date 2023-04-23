@@ -11,13 +11,13 @@ const Header = () => {
 
     return (
         <Fragment>
-            <div className="container d-flex align-items-center justify-content-between" style={{height:"100px"}}>
+            <div className="contianer-fluid position-absolute  d-flex align-items-center justify-content-evenly w-100" style={{ height: "100px", zIndex: "2" }}>
                 <div className="headerName d-flex align-items-center justify-content-start gap-4">
                     <h2 className='text-white'>Superlist</h2>
                     <div className="headerMenuSelect position-relative us-none" >
                         <span className='cursor-p headerDropdownBtn fs-5' onClick={() => { setMenuDropDown(!MenuDropDown) }}>  Menu <ChevronDown /></span>
                         <div className={`headerMenuItems ${MenuDropDown ? "" : "d-none"}`}>
-                            <a href='/' className='us-none fs-6'>Home</a>
+                            <a href='/' className='us-none fs-6'>Menu</a>
                             <a href='/' className='us-none fs-6'>Updates</a>
                             <a href='/' className='us-none fs-6'>Careers</a>
                             <a href='/' className='us-none fs-6'>Manifesto</a>
