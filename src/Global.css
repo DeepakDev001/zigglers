@@ -2,6 +2,17 @@
   user-select: none;
 }
 
-.cursor-p{
-    cursor: pointer;
+.cursor-p {
+  cursor: pointer;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.purpleText {
+  color: var(--text-purple);
+}
+.SectionBgColor {
+  background-color: var(--bg-lightest);
 }

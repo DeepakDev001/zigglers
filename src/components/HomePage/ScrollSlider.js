@@ -4,16 +4,16 @@ const ScrollSlider = ({ imageLink }) => {
     return (
         <div className="UiSlider">
             <div className="SlideOne">
-                {[...Array(10)].map((item, index) => (
+                {imageLink.map((item, index) => (
                     <div className="images">
-                        <iframe src={imageLink} height="570" width="450" frameborder="0" scrolling="no" ></iframe>
+                        <img src={item} height="570" width="450" frameborder="0" scrolling="no" />
                     </div>
                 ))}
             </div>
             <div className="SlideOne">
-                {[...Array(10)].map((item, index) => (
+                {imageLink.map((item, index) => (
                     <div className="images">
-                        <iframe src={imageLink} height="570" width="450" frameborder="0" scrolling="no" ></iframe>
+                        <img src={item} height="570" width="450" frameborder="0" scrolling="no" />
                     </div>
                 ))}
             </div>
