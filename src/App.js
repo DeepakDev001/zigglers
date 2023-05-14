@@ -1,11 +1,15 @@
 import './App.css';
-import Footer from './Footer';
+import "./Global.css"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/HomePage/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
