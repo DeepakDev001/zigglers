@@ -1,0 +1,162 @@
+.main-section {
+  width: 100%;
+  height: 120vh;
+  background-color: var(--bg-orange);
+}
+
+:root {
+  --width: "100%";
+}
+.wrapper {
+  width: var(--width);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120vh;
+  z-index: 1;
+  background-attachment: fixed;
+  background: var(--bg-dark);
+  overflow: hidden;
+  color: black;
+}
+
+.text {
+  width: var(--width);
+  /* content: "Get thing done with your Bozx"; */
+  position: absolute;
+  color: var(--white);
+  left: 50%;
+  z-index: 2;
+  top: 30%;
+  text-align: center;
+  width: fit-content;
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
+  font-size: calc(100vw / 26);
+  background-attachment: fixed;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.SlideOne {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: 176vw;
+  animation: scrollX 40s linear infinite;
+}
+
+@keyframes scrollX {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.UiSlider {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  user-select: none;
+}
+
+.images {
+  display: grid;
+  place-items: center;
+  width: calc(100vw / 5);
+  height: 100%;
+  aspect-ratio: 4/5;
+  padding: 10px;
+  /* padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10); */
+}
+
+.images > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  aspect-ratio: 4/5;
+  object-fit: contain;
+  object-position: center;
+  /* padding: 5px 20px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Todo section Css  */
+
+.TodoSection {
+  width: 100%;
+  height: 120vh;
+}
+
+.TodoHeader {
+  height: calc(120vh / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoHeaderLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.TodoHeaderLink {
+  font-size: 2rem;
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  padding: 8px 25px 8px 40px;
+  font-weight: 700;
+  border-left: 8px solid #eeeef0;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  /* box-sizing: content-box; */
+}
+.TodoActiveLink {
+  font-size: 2rem;
+  position: relative;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  padding: 10px 25px 10px 40px;
+  font-weight: 700;
+  color: var(--text-purple);
+  border-left: 8px solid #eeeef0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.TodoActiveLink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  height: 100%;
+  background-color: var(--text-purple);
+  width: 8px;
+  border-radius: 30px;
+}
+
+.todoHeadingText {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.TodoVideoArea {
+  width: 100%;
+  height: calc(120vh / 2);
+}
+
+
+
